@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 :root {
+  --main-font-family: "Roboto" ,sans-serif;
   --primary-color: #212121;
   --secondary-color: #757575;
   --dark-background-color: #2f303a;
@@ -7,7 +8,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font-family);
+  color: var(--primary-color);
 }
 
 .logo-first {
@@ -26,4 +28,14 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+.navigation-links{
+  list-style: none;
+  font-size: 14;
+  font-weight: 500;
+}
 
+.navigation-links:hover,
+.navigation-links:focus,
+.navigation-links:active. {
+  color: #2196F3
+}
