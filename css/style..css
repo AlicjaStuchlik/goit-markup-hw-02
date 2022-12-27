@@ -1,41 +1,257 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
 :root {
-  --main-font-family: "Roboto" ,sans-serif;
-  --primary-color: #212121;
-  --secondary-color: #757575;
-  --dark-background-color: #2f303a;
-  --second-background-color: #f5f4fa;
+  --primary-font: "Roboto", sans-serif;  /* main font on the page */
+  --logo-font: "Raleway", sans-serif; /* font in logo */
+  --primary-color: #212121; /* main text color on the page headers */
+  --secondary-color: #757575; /* color for box descriptions and phone */
+  --dark-background-color: #2f303a; /* dark background color for header and footer */
+  --second-background-color: #f5f4fa; /* background color in nasz zesół section and portfolio project */
+  --logo-studio-color: #000000;
+ 
+
 }
 
 body {
-  font-family: var(--main-font-family);
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+/* header menu */
+.header-link,
+.contact-link,
+.link-logo {
+  text-decoration: none
+}
+/* contact list in header with no bulletpoint */
+    .header-menu-item,
+    .header-contact-list {
+list-style: none;
+    }
+
+.link-logo {
+  color:#000000;
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: var(--logo-studio-color);
+}
+/*logo webstudio first blue part */
+ .logo-first {
+  color:#2196F3
+ }
+/* header link to agencja portfolio kontakt */
+.header-link{
+  font-weight: 500;
+  line-height: 1.17;
   color: var(--primary-color);
 }
-
-.logo-first {
-    color:#2196F3;
-}
-.link {
-    text-decoration: none;
-    color:inherit
-}
-
-.header-logo {
-    color:#000000;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-}
-.navigation-links{
-  list-style: none;
-  font-size: 14;
-  font-weight: 500;
-}
-
-.navigation-links:hover,
-.navigation-links:focus,
-.navigation-links:active. {
+/*pseudoclasses of link special state */
+.header-link:hover,
+.header-link:focus,
+.contact-link:hover
+.contact-link:focus {
   color: #2196F3
+}
+/* link to email and tel */
+.contact-link {
+  color: var(--secondary-color);
+  font-weight:  500 ;
+  line-height: 1.17;
+}
+ 
+/* header main heading and button */
+.main-headline {
+  text-align: center;
+  background-color:#2f303a
+}
+
+.main-headline-item {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/* main button zamow usługe*/
+.main-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 0.06em;
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+/* first letter in main button zamow usługe */
+.main-button::first-letter {
+  text-transform: capitalize
+}
+/*pseudoclass hover focus and pointer */
+.main-button {
+cursor: pointer;
+}
+
+.description-item {
+  list-style: none;
+}
+/* lorem ipsum headers */
+.description-name {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase
+}
+/*lorem ipsum paragraph description */
+ .description-paragraph {
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--secondary-color);
+ }
+/* czym sie zajmujemy title */
+ .service-main-title {
+font-size: 36px;
+font-weight: 700;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--primary-color);
+ }
+/* 3 images under czym sie zajmujemy */
+ .what-we-do-box {
+  list-style: none;
+ }
+/* nasz zespól background color*/
+.team {
+  background-color: var(--second-background-color);
+}
+
+.team-card-item {
+  list-style: none;
+}
+/* nasz zespół header */
+.our-team-header {
+color: var(--primary-color);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.our-team-header::first-letter {
+text-transform: uppercase;
+}
+
+/*john doe name card */
+.card-name {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+/*john doe profession */
+.card-description {
+color: var(--secondary-color);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.12;
+letter-spacing: 0.03em;
+}
+
+.footer {
+  background-color: var(--dark-background-color);
+}
+
+.link-footer, 
+.link-footer-logo {
+  text-decoration: none;
+}
+/*footer logo */
+.link-footer-logo {
+  color:#000000;
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: var(--logo-studio-color);
+}
+
+.link-footer-logo,
+.link-footer,
+.footer-contact-name {
+color: #FFFFFF;
+}
+
+.link-footer,
+.footer-contact-name {
+  list-style: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--secondary-color);
+}
+/* pseudoclasses */
+.footer-contact-name:hover,
+.link-footer:hover {
+  color: #2196F3;
+}
+/*footer pseudoclasses and color */
+.footer-contact-name:focus,
+.link-footer:focus {
+  color: #2196F3
+}
+.footer-address {
+  color: #FFFFFF;
+  font-style: normal;
+}
+
+  /* portfolio website */
+  /*buttons section as header is the same */
+
+.list-item,
+.card {
+  list-style: none;
+} 
+  /*buttons in main section */
+.list-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  width: 93px;
+  height: 38px;
+  background-color: var(--second-background-color);
+}
+  /*button pseudoclasses */
+.list-button:focus,
+.list-button:hover {
+  color:#FFFFFF;
+  background-color:#2196F3;
+  cursor: pointer;
+}
+
+.image-list-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  color: var(--primary-color);
+  letter-spacing: 0.06em;
+}
+
+.image-list-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  color: var(--secondary-color);
+  letter-spacing: 0.03em;
 }
